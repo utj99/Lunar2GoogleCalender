@@ -8,7 +8,7 @@ A Chrome extension to add lunar birthdays to Google Calendar as solar date event
 1. **Download the Extension**:
    - Clone the repository or download the ZIP and extract it:
      ```bash
-     git clone https://github.com/your-username/lunar-birthday-to-google-calendar.git
+     git clone https://github.com/utj99/Lunar2GoogleCalender.git
      ```
 
 2. **Load in Chrome**:
