@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Lunar Birthday Calendar</title>
+  <style>
+    body { width: 300px; padding: 10px; font-family: Arial, sans-serif; }
+    .input-group { margin: 10px 0; }
+    label { display: block; margin-bottom: 5px; }
+    input { width: 100%; padding: 5px; box-sizing: border-box; }
+    button { width: 100%; padding: 8px; background-color: #4CAF50; color: white; border: none; cursor: pointer; }
+    button:hover { background-color: #45a049; }
+    #status { 
+      margin-top: 10px; 
+      color: black; 
+      font-size: 14px; 
+      max-height: 200px; 
+      overflow-y: auto; 
+      white-space: pre-wrap; 
+      line-height: 1.2; 
+    }
+  </style>
+</head>
+<body>
+  <h3>음력 생일을 구글 캘린더에 추가</h3>
+  <div class="input-group">
+    <label for="month">음력 월 입력(1-12)</label>
+    <input type="number" id="month" min="1" max="12" placeholder="01">
+  </div>
+  <div class="input-group">
+    <label for="day">음력 일 입력(1-30)</label>
+    <input type="number" id="day" min="1" max="30" placeholder="01">
+  </div>
+  <div class="input-group">
+    <label for="eventName">이벤트 이름 입력</label>
+    <input type="text" id="eventName" placeholder="생일">
+  </div>
+  <div class="input-group">
+    <label for="yearsToAdd">올해부터 몇 년 추가할까요? (최대50년)</label>
+    <input type="number" id="yearsToAdd" min="1" max="50" placeholder="1">
+  </div>
+  <button id="addEvent">구글 캘린더에 추가하기</button>
+  <p id="status"></p>
+  <script src="popup.js"></script>
+</body>
+</html>
