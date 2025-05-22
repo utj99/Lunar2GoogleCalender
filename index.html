@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>음력 생일을 구글 캘린더에 추가하기 - Lunar2GoogleCalender</title>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            line-height: 1.6; 
+            margin: 0; 
+            padding: 0; 
+            background-color: #f4f7f6; 
+            color: #333; 
+        }
+        .container {
+            max-width: 960px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        header {
+            text-align: center;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        header h1 {
+            color: #4CAF50;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 1.1em;
+            color: #666;
+        }
+        .section {
+            padding: 30px 0;
+            border-bottom: 1px dashed #eee;
+        }
+        .section:last-of-type {
+            border-bottom: none;
+        }
+        h2 {
+            color: #4CAF50;
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 1.8em;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            background: #e9f5e9;
+            margin-bottom: 10px;
+            padding: 15px;
+            border-left: 5px solid #4CAF50;
+            border-radius: 4px;
+        }
+        .button-group {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .button {
+            display: inline-block;
+            padding: 12px 25px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+        .contact {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.95em;
+            color: #555;
+        }
+        .contact a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 40px;
+            border-top: 1px solid #eee;
+            font-size: 0.85em;
+            color: #777;
+        }
+        footer a {
+            color: #007bff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .screenshot {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .screenshot img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>음력 생일을 구글 캘린더에 추가하기</h1>
+            <p>Lunar2GoogleCalender: 음력 생일을 Google 캘린더에 간편하게 추가하고 매년 자동 업데이트 받으세요!</p>
+        </header>
+
+        <div class="section">
+            <h2>✨ 주요 기능</h2>
+            <ul>
+                <li>음력 날짜를 양력으로 **정확하게 자동 변환**하여 Google 캘린더에 추가합니다.</li>
+                <li>올해부터 **최대 50년**까지 자동으로 반복되는 생일 이벤트를 생성합니다.</li>
+                <li>사용자 본인의 **Google 캘린더와 직접 연동**되어 안전하고 편리하게 생일을 관리할 수 있습니다.</li>
+                <li>복잡한 음력-양력 변환 없이 간편하게 소중한 사람들의 생일을 놓치지 않을 수 있습니다.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>🚀 사용 방법</h2>
+            <ol>
+                <li>크롬 웹 스토어에서 "음력 생일을 구글 캘린더에 추가하기" 확장 프로그램을 설치합니다. (아직 배포 전)</li>
+                <li>브라우저 툴바에 있는 확장 프로그램 아이콘을 클릭하여 팝업 창을 엽니다.</li>
+                <li>팝업 창에 음력 월, 음력 일, 이벤트 이름(예: "엄마 생신"), 그리고 몇 년간 추가할지 입력합니다.</li>
+                <li>'구글 캘린더에 추가하기' 버튼을 클릭합니다.</li>
+                <li>(최초 사용 시) Google 로그인 및 캘린더 접근 권한 요청 동의 절차를 완료합니다.</li>
+                <li>입력된 음력 생일이 각 년도의 양력 날짜로 변환되어 당신의 Google 캘린더에 자동으로 추가됩니다.</li>
+            </ol>
+            <div class="screenshot">
+                </div>
+        </div>
+
+        <div class="button-group">
+            <a href="mailto:utj99@gmail.com" class="button" style="background-color: #6c757d;" target="_blank">문의하기</a>
+        </div>
+
+        <div class="contact">
+            <p>궁금한 점이나 제안이 있으시면 언제든지 <a href="mailto:utj99@gmail.com">utj99@gmail.com</a>으로 연락주세요.</p>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 utj99. All rights reserved.</p>
+            <a href="https://utj99.github.io/privacy.html" target="_blank">개인 정보 보호 정책</a>
+            <a href="https://utj99.github.io/terms.html" target="_blank">서비스 약관</a>
+        </footer>
+    </div>
+</body>
+</html>
